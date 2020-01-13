@@ -13,6 +13,9 @@ repository = "https://github.com/zkcrypto/jubjub"
 version = "0.3.0"
 edition = "2018"
 
+[lib]
+crate-type = ["staticlib", "rlib"]
+
 [dependencies.bls12_381]
 version = "0.1"
 default-features = false

@@ -1321,3 +1321,8 @@ fn test_serialization_consistency() {
         p = p + &gen;
     }
 }
+
+#[panic_handler]
+fn my_panic(_info: &core::panic::PanicInfo) -> ! {
+    loop {}
+}
